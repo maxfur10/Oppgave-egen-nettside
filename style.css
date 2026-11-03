@@ -167,7 +167,7 @@ h2 {
     border-style: solid;
     border-width: 3.5px;
 
-    margin: 20px 450px 20px;
+    margin: 25px 430px 25px;
 }
 
 
@@ -200,4 +200,19 @@ h2 {
 /* Større bilde i midten */
 .bilder .midten {
     width: 400px;
+}
+
+.hunden-min-titel {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+
+    margin: 20px 350px 20px;
 }
