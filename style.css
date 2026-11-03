@@ -11,7 +11,7 @@ h1 {
 }
 
 .hero {
-    background-image: url("city_night_enhanced_1290x800.jpg"); width: 1255px;
+    background-image: url("bilder/city_night_enhanced_1290x800.jpg"); width: 1255px;
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -49,13 +49,23 @@ h2 {
     
 }
 
-.katt {
-    text-align: left;
-    margin-top: 20px;
+.bilder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+    gap: 20px;
 }
 
-.katt img {
+.bilder img {
     width: 300px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 25px;
+}
+
+.bilder .midten {
+    width: 400px;
 }
