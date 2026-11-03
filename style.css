@@ -1,71 +1,203 @@
 h1 {
-    color : white;
+    color: white;
     text-align: center;
     text-transform: uppercase;
     font-size: 50px;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     border-style: solid;
     border-width: 5px;
 }
 
+
+/* Hero-bilde øverst */
 .hero {
-    background-image: url("bilder/city_night_enhanced_1290x800.jpg"); width: 1255px;
+    background-image: url("bilder/city_night_enhanced_1290x800.jpg");
     background-size: cover;
     background-position: center;
+
     height: 600px;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    overflow: hidden;
 }
 
+
+/* Gradvis blur og overgang nederst */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 300px;
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(5, 10, 25, 0.15) 35%,
+        rgba(5, 10, 25, 0.6) 75%,
+        #080d1c 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 100%
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 100%
+    );
+
+    pointer-events: none;
+}
+
+
+/* Overskriften foran blur */
+.hero h1 {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Generelt */
 html {
     background-color: #020202;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Resten av nettsiden */
+.innhold {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 100vh;
+
+    background-color: #080d1c;
+}
+
+
+/* Bakgrunnsbildet nummer to */
+.bakgrunn {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    filter: blur(8px) brightness(2);
+
+    transform: scale(1.05);
+
+    /* Bildet blender gradvis inn */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 300px
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 300px
+    );
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/* Innhold foran bakgrunnsbildet */
+.innhold-tekst {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Om meg */
 h2 {
     color: white;
     text-align: center;
     font-size: 30px;
-    font-family: "bold", sans-serif;
+    font-family: Arial, sans-serif;
+
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
+
     margin: 20px 550px 20px;
 }
 
+
+/* Teksten om kattene */
 .ben {
     color: white;
     text-align: center;
     font-size: 20px;
-    font-family: "bold", sans-serif;
+    font-family: Arial, sans-serif;
+
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+
     border-radius: 20px;
     border-style: solid;
     border-width: 3.5px;
+
     margin: 20px 450px 20px;
-    
 }
 
+
+/* Kattebildene */
 .bilder {
     display: flex;
     flex-direction: row;
+
     justify-content: space-between;
     align-items: flex-start;
+
     width: 100%;
+
     padding: 0 12px;
     box-sizing: border-box;
+
     gap: 20px;
 }
 
+
+/* Vanlige kattebilder */
 .bilder img {
     width: 300px;
     height: auto;
+
     border-radius: 25px;
 }
 
+
+/* Større bilde i midten */
 .bilder .midten {
     width: 400px;
 }
