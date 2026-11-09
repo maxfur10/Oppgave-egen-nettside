@@ -28,6 +28,22 @@ body {
     overflow: hidden;
 }
 
+.hero2 {
+    background-image: url("prosjekter/cityyy.png");
+    background-size: cover;
+    background-position: center;
+
+    height: 600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
 
 /* OVERSKRIFT */
 
