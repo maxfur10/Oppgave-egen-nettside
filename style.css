@@ -196,6 +196,19 @@ h1 {
     z-index: 1;
 }
 
+.kontakt-innhold {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.kontakt-innhold .tekstene {
+    margin: 0;
+}
+
 
 /* OVERSKRIFT 2 */
 
@@ -523,6 +536,21 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.tekstene {
+    color: rgb(252, 252, 252);
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    flex: 1;
+    max-width: 800px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*hjelp av ai*/
 @media (max-width: 768px) {
     .tekste-bokser {
         flex-direction: column;
@@ -530,6 +558,11 @@ h2 {
     }
 
     .tekste {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tekstene {
         width: 100%;
         box-sizing: border-box;
     }
