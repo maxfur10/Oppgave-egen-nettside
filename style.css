@@ -439,3 +439,24 @@ h2 {
     border: 4px solid rgb(255, 255, 255);
     border-radius: 25px;
 }
+
+.lærer-bilder {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    padding: 50px 12px;
+    box-sizing: border-box;
+}
+
+.lærer-bilder .midten {
+    width: 300px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+.lærer-bilder .midten2 {
+    width: 300px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 25px;
+}
