@@ -154,7 +154,7 @@ h1 {
 }
 
 
-/* BAKGRUNNSBILDE NUMMER TO */
+/* BAKGRUNNSBILDE NUMMER TO HJELP AV FOR FIKSING */
 
 .bakgrunn {
     position: absolute;
@@ -387,7 +387,7 @@ h2 {
 }
 
 
-/* SAMME BLUR-OVERGANG SOM HOVEDSIDE */
+/* SAMME BLUR-OVERGANG SOM HOVEDSIDE litt hjelp av ai for å fikse */
 
 .hero2::after {
     content: "";
@@ -500,7 +500,7 @@ h2 {
     margin: 20px 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+/*ai hjelp*/
 @media (max-width: 768px) {
     .tite-bokser {
         flex-direction: column;
